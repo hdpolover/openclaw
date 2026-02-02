@@ -11,6 +11,9 @@
     },
     "remote": {
       "token": "${OPENCLAW_GATEWAY_TOKEN}"
+    },
+    "controlUi": {
+      "enabled": true
     }
   },
   "agents": {
