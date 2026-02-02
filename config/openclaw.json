@@ -12,7 +12,8 @@
   },
   "channels": {
     "whatsapp": {
-      "dmPolicy": "pairing"
+      "dmPolicy": "pairing",
+      "selfChatMode": true
     }
   },
   "plugins": {
