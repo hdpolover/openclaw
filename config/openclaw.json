@@ -16,9 +16,24 @@
       "selfChatMode": true
     }
   },
+  "browser": {
+    "enabled": true,
+    "defaultProfile": "browserless",
+    "profiles": {
+      "browserless": {
+        "cdpUrl": "ws://browser:3000"
+      }
+    }
+  },
   "plugins": {
+    "slots": {
+      "memory": "memory-lancedb"
+    },
     "entries": {
       "whatsapp": {
+        "enabled": true
+      },
+      "memory-lancedb": {
         "enabled": true
       }
     }

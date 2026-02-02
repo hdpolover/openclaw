@@ -50,6 +50,14 @@ services:
     init: true
     entrypoint: ["node", "dist/index.js"]
 
+  browser:
+    image: ghcr.io/browserless/chromium:latest
+    restart: unless-stopped
+    environment:
+      - TIMEOUT=300000
+    ports:
+      - "127.0.0.1:3000:3000"
+
 volumes:
   openclaw-data:
   openclaw-workspace:
