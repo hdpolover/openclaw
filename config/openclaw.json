@@ -1,6 +1,7 @@
 {
   "gateway": {
-    "mode": "local"
+    "mode": "local",
+    "trustedProxies": ["loopback", "linklocal", "10.0.0.0/8"]
   },
   "agents": {
     "defaults": {

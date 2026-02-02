@@ -9,6 +9,7 @@ services:
       TERM: xterm-256color
       OPENCLAW_GATEWAY_TOKEN: ${OPENCLAW_GATEWAY_TOKEN}
       GEMINI_API_KEY: ${GEMINI_API_KEY}
+    user: "0:0"
     volumes:
       - openclaw-data:/home/node/.openclaw
       - ./config/openclaw.json:/home/node/.openclaw/openclaw.json
@@ -39,6 +40,7 @@ services:
       OPENCLAW_GATEWAY_TOKEN: ${OPENCLAW_GATEWAY_TOKEN}
       BROWSER: echo
       GEMINI_API_KEY: ${GEMINI_API_KEY}
+    user: "0:0"
     volumes:
       - openclaw-data:/home/node/.openclaw
       - ./config/openclaw.json:/home/node/.openclaw/openclaw.json
