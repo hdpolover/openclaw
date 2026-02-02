@@ -56,7 +56,7 @@ services:
     environment:
       - TIMEOUT=300000
     ports:
-      - "127.0.0.1:3000:3000"
+      - "127.0.0.1:18800:3000"
 
 volumes:
   openclaw-data:
