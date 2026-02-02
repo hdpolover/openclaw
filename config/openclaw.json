@@ -21,7 +21,8 @@
     "defaultProfile": "browserless",
     "profiles": {
       "browserless": {
-        "cdpUrl": "ws://browser:3000"
+        "cdpUrl": "ws://browser:3000",
+        "color": "#00AA00"
       }
     }
   },
