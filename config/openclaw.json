@@ -1,12 +1,25 @@
 {
   "gateway": {
     "mode": "local",
-    "trustedProxies": ["loopback", "linklocal", "10.0.1.10"]
+    "trustedProxies": [
+      "loopback",
+      "linklocal",
+      "10.0.1.10"
+    ],
+    "auth": {
+      "token": "${OPENCLAW_GATEWAY_TOKEN}"
+    },
+    "remote": {
+      "token": "${OPENCLAW_GATEWAY_TOKEN}"
+    }
   },
   "agents": {
     "defaults": {
       "model": {
-        "primary": "google/gemini-3-pro-preview"
+        "primary": "google/gemini-2.0-flash"
+      },
+      "memorySearch": {
+        "provider": "gemini"
       }
     }
   },
@@ -27,14 +40,8 @@
     }
   },
   "plugins": {
-    "slots": {
-      "memory": "memory-lancedb"
-    },
     "entries": {
       "whatsapp": {
-        "enabled": true
-      },
-      "memory-lancedb": {
         "enabled": true
       }
     }
