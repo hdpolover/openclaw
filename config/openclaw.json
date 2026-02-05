@@ -20,28 +20,5 @@
         "provider": "openai"
       }
     }
-  },
-  "channels": {
-    "whatsapp": {
-      "dmPolicy": "pairing",
-      "selfChatMode": true
-    }
-  },
-  "browser": {
-    "enabled": true,
-    "defaultProfile": "browserless",
-    "profiles": {
-      "browserless": {
-        "cdpUrl": "ws://browser:3000",
-        "color": "#00AA00"
-      }
-    }
-  },
-  "plugins": {
-    "entries": {
-      "whatsapp": {
-        "enabled": true
-      }
-    }
   }
 }
